@@ -9758,3 +9758,9 @@
   service: 'country-currency-exchange',
   timestamp: '2025-10-24T21:55:48.760Z'
 }
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T21:55:50.297Z'
+}
