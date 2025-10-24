@@ -9770,3 +9770,27 @@
   service: 'country-currency-exchange',
   timestamp: '2025-10-24T21:59:57.135Z'
 }
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T21:59:58.982Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T22:00:00.689Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T22:00:00.693Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T22:00:03.386Z'
+}
