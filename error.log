@@ -6028,3 +6028,106 @@
     '    at async getCountryByName (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/controllers/country.controller.ts:62:23)',
   timestamp: '2025-10-24T20:58:52.251Z'
 }
+{
+  service: 'country-currency-exchange',
+  message: 'Incorrect arguments to mysqld_stmt_execute',
+  code: 'ER_WRONG_ARGUMENTS',
+  errno: 1210,
+  sql: '\n' +
+    '        SELECT * FROM countries \n' +
+    '        WHERE estimated_gdp IS NOT NULL \n' +
+    '        ORDER BY estimated_gdp DESC \n' +
+    '        LIMIT ?\n' +
+    '      ',
+  sqlState: 'HY000',
+  sqlMessage: 'Incorrect arguments to mysqld_stmt_execute',
+  level: 'error',
+  stack: 'Error: Incorrect arguments to mysqld_stmt_execute\n' +
+    '    at PromisePool.execute (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/mysql2/lib/promise/pool.js:54:22)\n' +
+    '    at DatabaseService.query (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/common/config/database.ts:19:38)\n' +
+    '    at CountryModel.getTopCountriesByGDP (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/models/country.model.ts:215:29)\n' +
+    '    at CountryService.refreshCountries (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/services/country.service.ts:42:49)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async refreshCountries (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/controllers/country.controller.ts:13:22)',
+  timestamp: '2025-10-24T21:27:28.634Z'
+}
+{
+  service: 'country-currency-exchange',
+  message: 'Incorrect arguments to mysqld_stmt_execute',
+  code: 'ER_WRONG_ARGUMENTS',
+  errno: 1210,
+  sql: '\n' +
+    '        SELECT * FROM countries \n' +
+    '        WHERE estimated_gdp IS NOT NULL \n' +
+    '        ORDER BY estimated_gdp DESC \n' +
+    '        LIMIT ?\n' +
+    '      ',
+  sqlState: 'HY000',
+  sqlMessage: 'Incorrect arguments to mysqld_stmt_execute',
+  level: 'error',
+  stack: 'Error: Incorrect arguments to mysqld_stmt_execute\n' +
+    '    at PromisePool.execute (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/mysql2/lib/promise/pool.js:54:22)\n' +
+    '    at DatabaseService.query (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/common/config/database.ts:19:38)\n' +
+    '    at CountryModel.getTopCountriesByGDP (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/models/country.model.ts:215:29)\n' +
+    '    at CountryService.refreshCountries (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/services/country.service.ts:42:49)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async refreshCountries (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/controllers/country.controller.ts:13:22)',
+  timestamp: '2025-10-24T21:27:28.634Z'
+}
+{
+  service: 'country-currency-exchange',
+  message: 'Incorrect arguments to mysqld_stmt_execute',
+  code: 'ER_WRONG_ARGUMENTS',
+  errno: 1210,
+  sql: '\n' +
+    '        SELECT * FROM countries \n' +
+    '        WHERE estimated_gdp IS NOT NULL \n' +
+    '        ORDER BY estimated_gdp DESC \n' +
+    '        LIMIT ?\n' +
+    '      ',
+  sqlState: 'HY000',
+  sqlMessage: 'Incorrect arguments to mysqld_stmt_execute',
+  level: 'error',
+  stack: 'Error: Incorrect arguments to mysqld_stmt_execute\n' +
+    '    at PromisePool.execute (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/mysql2/lib/promise/pool.js:54:22)\n' +
+    '    at DatabaseService.query (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/common/config/database.ts:19:38)\n' +
+    '    at CountryModel.getTopCountriesByGDP (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/models/country.model.ts:215:29)\n' +
+    '    at CountryService.refreshCountries (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/services/country.service.ts:42:49)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async refreshCountries (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/controllers/country.controller.ts:13:22)',
+  timestamp: '2025-10-24T21:27:28.635Z'
+}
+{
+  service: 'country-currency-exchange',
+  level: 'error',
+  message: 'Error getting summary image: Summary image not found',
+  stack: 'Error: Summary image not found\n' +
+    '    at CountryService.getSummaryImage (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/services/country.service.ts:130:15)\n' +
+    '    at getSummaryImage (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/controllers/country.controller.ts:114:43)\n' +
+    '    at Layer.handle [as handle_request] (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at router.process_params (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at router.handle (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:175:3)',
+  timestamp: '2025-10-24T21:32:17.654Z'
+}
+{
+  service: 'country-currency-exchange',
+  level: 'error',
+  message: 'Error in getSummaryImage controller: Summary image not found',
+  stack: 'Error: Summary image not found\n' +
+    '    at CountryService.getSummaryImage (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/services/country.service.ts:130:15)\n' +
+    '    at getSummaryImage (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/src/controllers/country.controller.ts:114:43)\n' +
+    '    at Layer.handle [as handle_request] (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at router.process_params (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:280:10)\n' +
+    '    at router.handle (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:175:3)',
+  timestamp: '2025-10-24T21:32:17.656Z'
+}
