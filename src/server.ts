@@ -46,7 +46,7 @@ app.use('/countries', countryRoutes);
 app.use('/cache', express.static(path.join(process.cwd(), 'cache')));
 
 // Health check endpoint
-app.get('/health', (_req, res) => {
+app.get('/', (_req, res) => {
   res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 

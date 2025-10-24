@@ -9734,3 +9734,27 @@
     '    at router.handle (/Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/node_modules/express/lib/router/index.js:175:3)',
   timestamp: '2025-10-24T21:32:17.656Z'
 }
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T21:55:46.010Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T21:55:46.933Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T21:55:48.756Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T21:55:48.760Z'
+}
