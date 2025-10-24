@@ -45,7 +45,7 @@ export class CountryController {
 
       const countries = await countryService.getAllCountries(queryParams);
 
-      res.status(200).json(countries);
+      res.status(200).json({ count: countries.length, data: countries });
     } catch (error) {
       logger.error('Error in getAllCountries controller:', error);
       next(error);

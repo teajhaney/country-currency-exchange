@@ -9764,3 +9764,9 @@
   service: 'country-currency-exchange',
   timestamp: '2025-10-24T21:55:50.297Z'
 }
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-24T21:59:57.135Z'
+}
