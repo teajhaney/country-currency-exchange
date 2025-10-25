@@ -4,6 +4,7 @@ import { ApiResponse, CountryQueryParams } from '../types';
 import logger from '../common/utils/logger';
 
 export class CountryController {
+  //REFRESH COUNTIRES
   async refreshCountries(
     _req: Request,
     res: Response,
@@ -24,6 +25,7 @@ export class CountryController {
     }
   }
 
+  //GET COUNTRIES WITH FILTERING
   async getAllCountries(
     req: Request,
     res: Response,
@@ -45,13 +47,14 @@ export class CountryController {
 
       const countries = await countryService.getAllCountries(queryParams);
 
-      res.status(200).json({ count: countries.length, data: countries });
+      res.status(200).json(countries);
     } catch (error) {
       logger.error('Error in getAllCountries controller:', error);
       next(error);
     }
   }
 
+  //GET COUNTRY BY NAME
   async getCountryByName(
     req: Request,
     res: Response,
@@ -68,6 +71,7 @@ export class CountryController {
     }
   }
 
+  //DELETE COUNTRY BY NAME
   async deleteCountryByName(
     req: Request,
     res: Response,
@@ -90,6 +94,7 @@ export class CountryController {
     }
   }
 
+  //GET STATUS
   async getStatus(
     _req: Request,
     res: Response,
@@ -114,6 +119,8 @@ export class CountryController {
   //     logger.error('Error in getSummaryImage controller:', error);
   //     next(error);
   //   }
+
+  // GET SUMMARY IMAGE
   async getSummaryImage(
     _req: Request,
     res: Response,
