@@ -6,6 +6,65 @@ import { Country, CountryQueryParams, StatusResponse } from '../types';
 import logger from '../common/utils/logger';
 
 export class CountryService {
+  //   async refreshCountries(): Promise<{
+  //     message: string;
+  //     total_countries: number;
+  //   }> {
+  //     try {
+  //       logger.info('Starting countries refresh process...');
+
+  //       // Fetch and process data from external APIs
+  //       const countriesData = await externalApiService.fetchAndProcessAllData();
+
+  //       if (countriesData.length === 0) {
+  //         throw new Error('No countries data received from external APIs');
+  //       }
+
+  //       // Clear existing data and insert new data
+  //       await countryModel.clearAll();
+
+  //       let successCount = 0;
+  //       for (const countryData of countriesData) {
+  //         try {
+  //           await countryModel.create(countryData);
+  //           successCount++;
+  //         } catch (error) {
+  //           logger.warn(`Failed to save country ${countryData.name}:`, error);
+  //           // Continue with other countries even if one fails
+  //         }
+  //       }
+
+  //       // Update refresh status
+  //       await refreshStatusModel.updateStatus(successCount);
+
+  //       // Generate summary image
+  //       try {
+  //         const topCountries = await countryModel.getTopCountriesByGDP(5);
+  //         await imageGeneratorService.generateSummaryImage(
+  //           successCount,
+  //           topCountries,
+  //           new Date()
+  //         );
+  //       } catch (error) {
+  //         logger.error('Failed to generate summary image:', error);
+  //         // Don't fail the entire refresh if image generation fails
+  //       }
+
+  //       logger.info(
+  //         `Countries refresh completed successfully. ${successCount} countries processed.`
+  //       );
+
+  //       return {
+  //         message: `Successfully refreshed ${successCount} countries`,
+  //         total_countries: successCount,
+  //       };
+  //     } catch (error) {
+  //       logger.error('Error in refreshCountries:', error);
+  //       throw error;
+  //     }
+  //   }
+  // In refreshCountries():
+  //REFRESH COUNTRIES
   async refreshCountries(): Promise<{
     message: string;
     total_countries: number;
@@ -20,19 +79,11 @@ export class CountryService {
         throw new Error('No countries data received from external APIs');
       }
 
-      // Clear existing data and insert new data
+      // Clear existing data and bulk insert new data
       await countryModel.clearAll();
+      await countryModel.bulkCreate(countriesData); // <-- New: Single bulk op
 
-      let successCount = 0;
-      for (const countryData of countriesData) {
-        try {
-          await countryModel.create(countryData);
-          successCount++;
-        } catch (error) {
-          logger.warn(`Failed to save country ${countryData.name}:`, error);
-          // Continue with other countries even if one fails
-        }
-      }
+      const successCount = countriesData.length; // All succeed post-bulk
 
       // Update refresh status
       await refreshStatusModel.updateStatus(successCount);
@@ -43,7 +94,7 @@ export class CountryService {
         await imageGeneratorService.generateSummaryImage(
           successCount,
           topCountries,
-          new Date()
+          new Date() // <-- Pass Date for timestamp
         );
       } catch (error) {
         logger.error('Failed to generate summary image:', error);
@@ -64,6 +115,7 @@ export class CountryService {
     }
   }
 
+  //GET ALL COUNTRIES WITH FILTERING AND SORTING
   async getAllCountries(queryParams?: CountryQueryParams): Promise<Country[]> {
     try {
       return await countryModel.findAll(queryParams);
@@ -73,6 +125,7 @@ export class CountryService {
     }
   }
 
+  //GET COUNTRY BY NAME
   async getCountryByName(name: string): Promise<Country | null> {
     try {
       const country = await countryModel.findByName(name);
@@ -86,6 +139,7 @@ export class CountryService {
     }
   }
 
+  //DELETE COUNTRY BY NAME
   async deleteCountryByName(name: string): Promise<boolean> {
     try {
       const country = await countryModel.findByName(name);
@@ -106,6 +160,7 @@ export class CountryService {
     }
   }
 
+  //GET STATUS
   async getStatus(): Promise<StatusResponse> {
     try {
       const status = await refreshStatusModel.getStatus();
@@ -124,6 +179,7 @@ export class CountryService {
     }
   }
 
+  //GET SUMMARY IMAGE
   async getSummaryImage(): Promise<{ imagePath: string }> {
     try {
       if (!imageGeneratorService.summaryImageExists()) {

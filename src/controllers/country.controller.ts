@@ -105,6 +105,15 @@ export class CountryController {
     }
   }
 
+  // async getSummaryImage(_req: Request, res: Response, next: NextFunction): Promise<void> {
+  //   try {
+  //     const result = await countryService.getSummaryImage();
+  //     res.set('Content-Type', 'image/png'); // Add: Ensures browser treats as image
+  //     res.sendFile(result.imagePath);
+  //   } catch (error) {
+  //     logger.error('Error in getSummaryImage controller:', error);
+  //     next(error);
+  //   }
   async getSummaryImage(
     _req: Request,
     res: Response,
@@ -112,7 +121,7 @@ export class CountryController {
   ): Promise<void> {
     try {
       const result = await countryService.getSummaryImage();
-
+      res.set('Content-Type', 'image/png'); // Add: Ensures browser treats as image
       res.sendFile(result.imagePath);
     } catch (error) {
       logger.error('Error in getSummaryImage controller:', error);

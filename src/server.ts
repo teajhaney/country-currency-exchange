@@ -37,7 +37,6 @@ const endpointRateLimit = rateLimit({
 });
 
 app.use(endpointRateLimit);
-
 // Routes
 app.use('/status', statusRoutes);
 app.use('/countries', countryRoutes);
