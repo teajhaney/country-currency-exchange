@@ -44,6 +44,48 @@ export class CountryModel {
       throw error;
     }
   }
+  async bulkCreate(countriesData: CountryCreateData[]): Promise<void> {
+    if (countriesData.length === 0) {
+      logger.info('No countries to bulk insert');
+      return;
+    }
+
+    try {
+      // Build placeholders: (?, ?, ?, ...) repeated
+      const placeholders = countriesData
+        .map(() => '(?, ?, ?, ?, ?, ?, ?, ?, ?)') // 9 fields: name,capital,region,pop,curr,rate,gdp,flag,timestamp
+        .join(', ');
+
+      // Flatten values array
+      const now = new Date(); // Single timestamp for all (or per-country if needed)
+      const values: any[] = countriesData.flatMap(d => [
+        d.name,
+        d.capital || null,
+        d.region || null,
+        d.population,
+        d.currency_code || null,
+        d.exchange_rate || null,
+        d.estimated_gdp || null,
+        d.flag_url || null,
+        now, // last_refreshed_at
+      ]);
+
+      const sql = `
+      INSERT INTO countries (
+        name, capital, region, population, currency_code, 
+        exchange_rate, estimated_gdp, flag_url, last_refreshed_at
+      ) VALUES ${placeholders}
+    `;
+
+      const result = await database.execute(sql, values);
+      logger.info(
+        `Bulk inserted ${countriesData.length} countries (affected: ${result.affectedRows})`
+      );
+    } catch (error) {
+      logger.error('Error in bulkCreate:', error);
+      throw error;
+    }
+  }
 
   async findById(id: number): Promise<Country | null> {
     try {
@@ -215,48 +257,6 @@ export class CountryModel {
       return await database.query<Country>(sql, [limit]);
     } catch (error) {
       logger.error('Error getting top countries by GDP:', error);
-      throw error;
-    }
-  }
-  async bulkCreate(countriesData: CountryCreateData[]): Promise<void> {
-    if (countriesData.length === 0) {
-      logger.info('No countries to bulk insert');
-      return;
-    }
-
-    try {
-      // Build placeholders: (?, ?, ?, ...) repeated
-      const placeholders = countriesData
-        .map(() => '(?, ?, ?, ?, ?, ?, ?, ?, ?)') // 9 fields: name,capital,region,pop,curr,rate,gdp,flag,timestamp
-        .join(', ');
-
-      // Flatten values array
-      const now = new Date(); // Single timestamp for all (or per-country if needed)
-      const values: any[] = countriesData.flatMap(d => [
-        d.name,
-        d.capital || null,
-        d.region || null,
-        d.population,
-        d.currency_code || null,
-        d.exchange_rate || null,
-        d.estimated_gdp || null,
-        d.flag_url || null,
-        now, // last_refreshed_at
-      ]);
-
-      const sql = `
-      INSERT INTO countries (
-        name, capital, region, population, currency_code, 
-        exchange_rate, estimated_gdp, flag_url, last_refreshed_at
-      ) VALUES ${placeholders}
-    `;
-
-      const result = await database.execute(sql, values);
-      logger.info(
-        `Bulk inserted ${countriesData.length} countries (affected: ${result.affectedRows})`
-      );
-    } catch (error) {
-      logger.error('Error in bulkCreate:', error);
       throw error;
     }
   }

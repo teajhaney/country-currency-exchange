@@ -11846,3 +11846,495 @@
   service: 'country-currency-exchange',
   timestamp: '2025-10-25T15:06:49.456Z'
 }
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:37:41.165Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:37:43.985Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:37:47.249Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:37:47.252Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:37:57.140Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:00.491Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:02.674Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:02.677Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:38.260Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:40.191Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:43.480Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:46.509Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:47.901Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:49.248Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:54.836Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:56.796Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:38:56.800Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:01.150Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:03.139Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:04.279Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:08.498Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:11.210Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:12.311Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:13.921Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:15.211Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:18.079Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:20.460Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:20.462Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:26.932Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:30.139Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:33.135Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:39:33.137Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:40:11.151Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:40:12.024Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:40:14.717Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:40:16.843Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:40:16.845Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:41:56.065Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:41:59.019Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:42:00.933Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:42:00.936Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:42:44.532Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:42:47.205Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:42:50.163Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:42:53.103Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-25T15:42:53.107Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:52:03.735Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:52:04.718Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:52:07.492Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:52:09.563Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:52:09.567Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:53:18.125Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:53:20.149Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:53:22.733Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:53:24.708Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T09:53:24.713Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:26:56.484Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:26:59.406Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:27:01.320Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:27:01.322Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:27:06.933Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:27:09.656Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:27:11.723Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:27:11.727Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:32:57.995Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:33:00.770Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:33:02.742Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:33:02.744Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:15.712Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:18.629Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:20.780Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:20.783Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:34.943Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:37.756Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:39.693Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T11:34:39.696Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T12:58:07.635Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T12:58:10.644Z'
+}
+{
+  message: 'Cache directory exists: /Users/teajhaney/Desktop/Acode/2025/Project/backend/HNG/country-currency-exchange/cache',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T12:58:13.089Z'
+}
+{
+  message: 'Database connection successful',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T12:58:15.595Z'
+}
+{
+  message: 'Database tables initialized successfully',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T12:58:17.394Z'
+}
+{
+  message: 'Server started successfully on port 3000',
+  level: 'info',
+  service: 'country-currency-exchange',
+  timestamp: '2025-10-27T12:58:17.396Z'
+}

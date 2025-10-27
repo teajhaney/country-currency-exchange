@@ -50,8 +50,8 @@ app.get('/', (_req, res) => {
 });
 
 //Error handler
-app.use(notFoundHandler);
 app.use(errorHandler);
+app.use(notFoundHandler);
 
 // Initialize database and start server
 async function startServer() {

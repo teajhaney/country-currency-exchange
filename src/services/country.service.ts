@@ -6,64 +6,6 @@ import { Country, CountryQueryParams, StatusResponse } from '../types';
 import logger from '../common/utils/logger';
 
 export class CountryService {
-  //   async refreshCountries(): Promise<{
-  //     message: string;
-  //     total_countries: number;
-  //   }> {
-  //     try {
-  //       logger.info('Starting countries refresh process...');
-
-  //       // Fetch and process data from external APIs
-  //       const countriesData = await externalApiService.fetchAndProcessAllData();
-
-  //       if (countriesData.length === 0) {
-  //         throw new Error('No countries data received from external APIs');
-  //       }
-
-  //       // Clear existing data and insert new data
-  //       await countryModel.clearAll();
-
-  //       let successCount = 0;
-  //       for (const countryData of countriesData) {
-  //         try {
-  //           await countryModel.create(countryData);
-  //           successCount++;
-  //         } catch (error) {
-  //           logger.warn(`Failed to save country ${countryData.name}:`, error);
-  //           // Continue with other countries even if one fails
-  //         }
-  //       }
-
-  //       // Update refresh status
-  //       await refreshStatusModel.updateStatus(successCount);
-
-  //       // Generate summary image
-  //       try {
-  //         const topCountries = await countryModel.getTopCountriesByGDP(5);
-  //         await imageGeneratorService.generateSummaryImage(
-  //           successCount,
-  //           topCountries,
-  //           new Date()
-  //         );
-  //       } catch (error) {
-  //         logger.error('Failed to generate summary image:', error);
-  //         // Don't fail the entire refresh if image generation fails
-  //       }
-
-  //       logger.info(
-  //         `Countries refresh completed successfully. ${successCount} countries processed.`
-  //       );
-
-  //       return {
-  //         message: `Successfully refreshed ${successCount} countries`,
-  //         total_countries: successCount,
-  //       };
-  //     } catch (error) {
-  //       logger.error('Error in refreshCountries:', error);
-  //       throw error;
-  //     }
-  //   }
-  // In refreshCountries():
   //REFRESH COUNTRIES
   async refreshCountries(): Promise<{
     message: string;
@@ -81,7 +23,7 @@ export class CountryService {
 
       // Clear existing data and bulk insert new data
       await countryModel.clearAll();
-      await countryModel.bulkCreate(countriesData); // <-- New: Single bulk op
+      await countryModel.bulkCreate(countriesData); // Single bulk op
 
       const successCount = countriesData.length; // All succeed post-bulk
 
@@ -91,14 +33,16 @@ export class CountryService {
       // Generate summary image
       try {
         const topCountries = await countryModel.getTopCountriesByGDP(5);
+
         await imageGeneratorService.generateSummaryImage(
           successCount,
           topCountries,
-          new Date() // <-- Pass Date for timestamp
+          new Date()
         );
+        logger.info('Summary image generated successfully');
       } catch (error) {
         logger.error('Failed to generate summary image:', error);
-        // Don't fail the entire refresh if image generation fails
+
       }
 
       logger.info(

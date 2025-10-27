@@ -20,10 +20,7 @@ export class ExternalAPIService {
     try {
       logger.info('Fetching countries from external API...');
       const response = await axios.get<CountryAPIResponse[]>(
-        this.countriesApiUrl,
-        // {
-        //   timeout: 60000, // 30 seconds timeout
-        // }
+        this.countriesApiUrl
       );
 
       if (!Array.isArray(response.data)) {
@@ -50,10 +47,7 @@ export class ExternalAPIService {
     try {
       logger.info('Fetching exchange rates from external API...');
       const response = await axios.get<ExchangeRatesResponse>(
-        this.exchangeApiUrl,
-        // {
-        //   timeout: 60000, // 30 seconds timeout
-        // }
+        this.exchangeApiUrl
       );
 
       if (!response.data.rates || typeof response.data.rates !== 'object') {
